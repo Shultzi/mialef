@@ -1,0 +1,13 @@
+<template name="Cards">
+	<div class="cards medium-6 columns medium-offset-3">
+		<h3> Services For: <span style="font-size: 18px">{{userName}} </span></h3>
+		<hr/>
+
+		<br/>
+		{{#each services}}
+			{{>Card}}
+		<br/>
+		{{/each}}
+	</div>
+
+</template>

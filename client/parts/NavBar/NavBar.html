@@ -1,0 +1,11 @@
+<template name="NavBar">
+	<nav class="top-bar" data-topbar role="navigation">
+	  <ul>
+	    <li><label>Users:</label></li>
+	    {{#each user in users}}
+	    <li><a href="/Cards">card {{user}}</a></li>
+	    {{/each}}
+	  </ul>
+	</nav>
+  <!-- Other JS plugins can be included here -->
+</template>

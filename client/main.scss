@@ -1,0 +1,83 @@
+/* CSS declarations go here */
+@import '{zurb:foundation-sites}/scss/foundation';
+
+@include foundation-everything;
+
+@mixin border-radius($radius: 20px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius:	$radius;
+	-border-radius:	$radius;
+}
+
+
+
+body{
+	background: #990099;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+li{
+	list-style: none;
+}
+
+.event-date {
+	width: 6rem;
+	margin: 0 auto 1rem;
+	display: block;
+	width: auto; }
+.event-date .event-month {
+    margin: 0;
+    background: #eee;
+    padding: 0.5rem 2rem;
+    text-align: center; }
+.event-date .event-day {
+    margin: 0;
+    border: 1px solid #eee;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 2rem; }
+
+
+nav, header{
+    text-align: center;
+
+	li{
+		display: inline-block;
+	}
+}
+		
+.cards{
+
+	h3{text-align: center;}
+
+	background: #ffb3ff;
+
+	.card{
+		@include border-radius(5px);
+		background: #ffe6ff;	
+		p, h3{
+			margin: 5%;
+		}
+
+		.title{
+			text-align: center;
+		}
+
+		.lastUpdate{
+
+			font-size: 80%;
+		}
+
+		.debt{
+			float: right;
+			vertical-align: bottom;
+			.payThis{
+				float: right;
+			}
+		}
+	}
+}
+
+
+

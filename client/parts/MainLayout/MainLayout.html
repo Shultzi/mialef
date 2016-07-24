@@ -1,0 +1,21 @@
+<template name="MainLayout">
+<!--        -->
+<head>
+  <title>Alef Contracts</title>
+</head>
+<div class="row">
+	<header>
+		<h1> Alef Contracts </h1>
+	</header>
+
+	<!--        -->
+	{{> NavBar}}
+	<!--        -->
+		<main>
+			<div class="row"> 
+			{{> Template.dynamic template=main}}
+			</div>
+		</main>	
+	<!--        -->
+</div>
+</template>
